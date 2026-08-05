@@ -1,0 +1,27 @@
+{
+  "name": "api-analystics-platform",
+  "version": "1.0.0",
+  "description": "API Gateway and Analytics Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanfan8/developer-api-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nathanfan8/developer-api-platform/issues"
+  },
+  "homepage": "https://github.com/nathanfan8/developer-api-platform#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.2",
+    "tsx": "^4.23.8",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,5 @@
+version: '3.8'
+
+services: 
+  postgress: 
+    image: postgress: 16-alpine
