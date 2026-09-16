@@ -1,5 +1,24 @@
-version: '3.8'
-
 services: 
-  postgress: 
-    image: postgress: 16-alpine
+  postgres: 
+    image: postgres:16-alpine
+    container_name: api_analytics_postgres
+    environment:
+      POSTGRES_USER: dev_user
+      POSTGRES_PASSWORD: dev_password
+      POSTGRES_DB: api_analytics
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: api_analytics_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
